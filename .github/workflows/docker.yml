@@ -21,3 +21,15 @@ jobs:
 
       - name: Push Docker image
         run: docker push ghassanqur/devops-app:v1
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            docker pull ghassanqur/devops-app:v1
+            docker stop app || true
+            docker rm app || true
+            docker run -d -p 80:80 --name app ghassanqur/devops-app:v1
