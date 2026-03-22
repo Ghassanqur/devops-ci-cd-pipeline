@@ -1,23 +1,19 @@
-# Docker DevOps Project
+This project demonstrates a simple DevOps workflow using Docker and GitHub Actions.
 
-## Overview
-Containerized a static web application using Docker and Nginx.
+##  Features
 
-## What I Did
-- Created a Dockerfile
-- Built Docker image
-- Ran container
+- Simple HTML app
+- Dockerized using Nginx
+- CI pipeline using GitHub Actions
+- Automatic Docker image build and push to Docker Hub
 
-## Project Files
-- index.html
-- Dockerfile
+##  Docker Image
 
-## Build Image
-docker build -t devops-app .
+Docker Hub Repository:
+https://hub.docker.com/r/ghassanqur/devops-app
 
-## Run Container
-docker run -d -p 8080:80 devops-app
+##  CI/CD Pipeline
 
-## Result
-App running at:
-http://localhost:8080
+On every push to `main` branch:
+- Build Docker image
+- Push image to Docker Hub
