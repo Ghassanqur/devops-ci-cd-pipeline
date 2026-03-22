@@ -30,6 +30,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             docker pull ghassanqur/devops-app:v1
-            docker stop app || true
-            docker rm app || true
+            docker stop $(docker ps -q) || true
+            docker rm $(docker ps -aq) || true
             docker run -d -p 80:80 --name app ghassanqur/devops-app:v1
