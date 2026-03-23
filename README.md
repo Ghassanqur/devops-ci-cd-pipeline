@@ -73,6 +73,12 @@ The app is deployed on AWS EC2 and updates automatically whenever I push new cha
 
 ---
 
+## Screenshot of output
+
+<img width="971" height="417" alt="image" src="https://github.com/user-attachments/assets/1be98a95-7772-429b-b31c-9566beb0f3a1" />
+
+---
+
 ## What I learned
 
 * How Docker works in a real project
