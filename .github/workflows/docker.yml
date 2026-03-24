@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "index.html"
+      - "Dockerfile"
+      - ".github/workflows/docker.yml"
 
 jobs:
   build-and-push:
