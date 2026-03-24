@@ -70,6 +70,8 @@ Then open: http://localhost:8080
 ## Deployment
 
 The app is deployed on AWS EC2 and updates automatically whenever I push new changes.
+Note: The instance is stopped when not in use to avoid charges.  
+Start the EC2 instance to access the live demo.
 
 ---
 
