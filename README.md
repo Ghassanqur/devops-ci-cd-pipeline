@@ -1,3 +1,5 @@
+This project demonstrates a complete CI/CD pipeline with automated deployment to AWS EC2 using Docker and GitHub Actions.
+
 # DevOps CI/CD Pipeline Project 
 
 ## What this project is about
